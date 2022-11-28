@@ -1,6 +1,6 @@
 {
   "name": "understrap-child",
-  "version": "1.1.0",
+  "version": "0.0.1",
   "description": "Basic Child Theme for Understrap Theme Framework: https://github.com/understrap/understrap",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,8 @@
     "copy-assets": "node src/build/copy-assets.js",
     "dist": "npm-run-all --parallel css js",
     "dist-build": "node src/build/dist-build.js",
-    "dist-clean": "node src/build/dist-clean.js"
+    "dist-clean": "node src/build/dist-clean.js",
+    "start": "npm run watch-run-css"
   },
   "engines": {
     "node": ">=14"
