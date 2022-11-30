@@ -139,7 +139,8 @@ function volume_post_type()
 		'has_archive' => true,
 		'menu_icon' => 'dashicons-welcome-write-blog',
 		'rewrite' => array('slug' => 'numer'),
-		'supports' => $supports
+		'supports' => $supports,
+		'menu_position' => 2
 	);
 
 	register_post_type('volume_post_type', $args);
@@ -178,7 +179,8 @@ function friend_post_type()
 		'show_admin_column' => true,
 		'has_archive' => false,
 		'menu_icon' => 'dashicons-groups',
-		'supports' => $supports
+		'supports' => $supports,
+		'menu_position' => 2
 	);
 
 	register_post_type('friend_post_type', $args);

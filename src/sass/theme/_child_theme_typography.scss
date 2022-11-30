@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Lato;
+  src: url('fonts/Lato/Lato-Regular.ttf');
+  src: url('fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LatoBold;
+  src: url('fonts/Lato/Lato-Bold.ttf');
+  src: url('fonts/Lato/Lato-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LatoBoldItalic;
+  src: url('fonts/Lato/Lato-BoldItalic.ttf');
+  src: url('fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: LatoItalic;
+  src: url('fonts/Lato/Lato-Italic.ttf');
+  src: url('fonts/Lato/Lato-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: LatoBlack;
+  src: url('fonts/Lato/Lato-Black.ttf');
+  src: url('fonts/Lato/Lato-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LatoBlackItalic;
+  src: url('fonts/Lato/Lato-BlackItalic.ttf');
+  src: url('fonts/Lato/Lato-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: LatoLight;
+  src: url('fonts/Lato/Lato-Light.ttf');
+  src: url('fonts/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LatoLightItalic;
+  src: url('fonts/Lato/Lato-LightItalic.ttf');
+  src: url('fonts/Lato/Lato-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Minion;
+  src: url('fonts/Minion/Minion-Regular.otf');
+  src: url('fonts/Minion/Minion-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MinionBold;
+  src: url('fonts/Minion/Minion-Bold.otf');
+  src: url('fonts/Minion/Minion-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MinionBoldItalic;
+  src: url('fonts/Minion/Minion-BoldIt.otf');
+  src: url('fonts/Minion/Minion-BoldIt.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: MinionItalic;
+  src: url('fonts/Minion/Minion-It.otf');
+  src: url('fonts/Minion/Minion-It.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: MinionMedium;
+  src: url('fonts/Minion/Minion-Medium.otf');
+  src: url('fonts/Minion/Minion-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MinionMediumIt;
+  src: url('fonts/Minion/Minion-MediumIt.otf');
+  src: url('fonts/Minion/Minion-MediumIt.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: MinionSemibold;
+  src: url('fonts/Minion/MinionPro-Semibold.otf');
+  src: url('fonts/Minion/MinionPro-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MinionSemiboldItalic;
+  src: url('fonts/Minion/Minion-SemiboldIt.otf');
+  src: url('fonts/Minion/Minion-SemiboldIt.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+// Normal texts
+a,
+p,
+li,
+span {
+  font-family: Minion, 'Courier New', Courier, monospace;
+}
+
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+
+  &.h1,
+  &.h2,
+  &.h3,
+  &.h4,
+  &.h5,
+  &.h6 {
+    font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  &.sectionTitle,
+  .sectionTitle {
+    margin-bottom: 3rem;
+    text-align: center;
+    overflow-wrap: break-word;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 3px;
+      background-color: $primary;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 3px;
+    }
+
+    &:before {
+      bottom: -.5rem;
+      width: 200px;
+    }
+
+    &:after {
+      bottom: -1rem;
+      width: 100px;
+    }
+  }
+}

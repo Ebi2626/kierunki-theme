@@ -44,8 +44,8 @@ $container = get_theme_mod('understrap_container_type');
         );
         $recent_volumes = new WP_Query($query_volumes);
         ?>
-        <section class="articles">
-          <h2 class="articles__title text-center mb-4">Najnowsze numery</h2>
+        <section class="articles wrapper">
+          <h2 class="articles__title text-center sectionTitle">Najnowsze numery</h2>
           <div class="articles__wrapper mx-4">
             <?php if ($recent_volumes->have_posts()): ?>
             <ul class="articles__grid">
@@ -54,7 +54,7 @@ $container = get_theme_mod('understrap_container_type');
                 $recent_volumes->the_post();
                 $thumbnail_id = get_post_thumbnail_id(get_the_ID());
               ?>
-              <li class="card articles__gridItem" style="width: 18rem;">
+              <li class="card articles__gridItem">
                 <img src="<?php the_post_thumbnail_url(); ?>" class="card-img-top"
                   alt="<?php echo get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true); ?>">
                 <div class="card-body">
@@ -78,8 +78,8 @@ $container = get_theme_mod('understrap_container_type');
         </section>
         <?php wp_reset_postdata(); ?>
 
-        <section class="friends">
-          <h2 class="friends__title text-center mb-4">Współpracują z nami</h2>
+        <section class="friends wrapper">
+          <h2 class="friends__title text-center sectionTitle">Współpracują z nami</h2>
           <div class="friends__wrapper mx-4">
             <?php
             $query_friends = array(
@@ -100,7 +100,7 @@ $container = get_theme_mod('understrap_container_type');
                   <img src="<?php the_post_thumbnail_url(); ?>" class="friends__gridItemImage"
                     alt="<?php echo get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true); ?>">
                   <div class="friends__gridItemContent">
-                    <p class="friends__gridItemContentText text-center h4">
+                    <p class="friends__gridItemContentText text-center h5">
                       <?php echo the_title(); ?>
                     </p>
                   </div>

@@ -1,0 +1,19 @@
+.post {
+  .wp-post-image {
+    margin: 0 auto 3rem;
+    display: block;
+  }
+
+  .entry-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    align-items: center;
+    margin: 0 auto;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    font-size: 1.125rem;
+    text-align: justify;
+    word-break: break-word;
+  }
+}

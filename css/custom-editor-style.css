@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.btn-primary {
+  color: white;
+}
+.btn-primary:hover {
+  color: white;
+}
+
 *,
 *::before,
 *::after {

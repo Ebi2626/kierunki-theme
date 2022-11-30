@@ -12,33 +12,29 @@ defined('ABSPATH') || exit;
 <article <?php post_class(); ?> id="post-
     <?php the_ID(); ?>">
 
-    <header class="entry-header">
+  <header class="entry-header">
+    <h1 class="entry-title sectionTitle">
+      <?php echo get_field('autor'); ?>
+      -
+      <?php echo get_the_title(); ?>
+    </h1>
+  </header><!-- .entry-header -->
 
-        <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+  <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
 
-        <div class="entry-meta">
+  <div class="entry-content">
 
-            <?php understrap_posted_on(); ?>
+    <?php
+    the_content();
+    understrap_link_pages();
+    ?>
 
-        </div><!-- .entry-meta -->
+  </div><!-- .entry-content -->
 
-    </header><!-- .entry-header -->
+  <footer class="entry-footer">
 
-    <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
+    <?php understrap_entry_footer(); ?>
 
-    <div class="entry-content">
-
-        <?php
-        the_content();
-        understrap_link_pages();
-        ?>
-
-    </div><!-- .entry-content -->
-
-    <footer class="entry-footer">
-
-        <?php understrap_entry_footer(); ?>
-
-    </footer><!-- .entry-footer -->
+  </footer><!-- .entry-footer -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

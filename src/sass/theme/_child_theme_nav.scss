@@ -10,12 +10,13 @@
 
 .navbar-nav {
     .nav-item {
+
         &.active {
             .nav-link {
                 &:after {
                     transform: scale(1);
                 }
-                
+
             }
         }
 
@@ -25,6 +26,7 @@
             position: relative;
             font-weight: 500;
             transition: color .4s ease-in-out;
+            font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
 
             &:after {
                 content: '';
@@ -39,8 +41,10 @@
                 transform-origin: center;
             }
 
-            &:hover {
-                color: white;
+            &:hover,
+            &:focus {
+                color: black;
+
                 &:after {
                     transform: scale(1);
                 }

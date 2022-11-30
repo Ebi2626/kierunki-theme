@@ -3,4 +3,15 @@
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
 $onr_green: #4b9b30;
-$primary: #4b9b30;  // Once we've changed the value, we'll also make it the primary brand color.
+$primary: #4b9b30; // Once we've changed the value, we'll also make it the primary brand color.
+
+
+
+// Overrriding bootstrap classes
+.btn-primary {
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+}

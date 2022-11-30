@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.btn-primary {
+  color: white;
+}
+.btn-primary:hover {
+  color: white;
+}
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -15598,6 +15605,319 @@ figure.woocommerce-product-gallery__wrapper {
   display: block;
 }
 
+@font-face {
+  font-family: Lato;
+  src: url("fonts/Lato/Lato-Regular.ttf");
+  src: url("fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: LatoBold;
+  src: url("fonts/Lato/Lato-Bold.ttf");
+  src: url("fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: LatoBoldItalic;
+  src: url("fonts/Lato/Lato-BoldItalic.ttf");
+  src: url("fonts/Lato/Lato-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: LatoItalic;
+  src: url("fonts/Lato/Lato-Italic.ttf");
+  src: url("fonts/Lato/Lato-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: LatoBlack;
+  src: url("fonts/Lato/Lato-Black.ttf");
+  src: url("fonts/Lato/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: LatoBlackItalic;
+  src: url("fonts/Lato/Lato-BlackItalic.ttf");
+  src: url("fonts/Lato/Lato-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: LatoLight;
+  src: url("fonts/Lato/Lato-Light.ttf");
+  src: url("fonts/Lato/Lato-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: LatoLightItalic;
+  src: url("fonts/Lato/Lato-LightItalic.ttf");
+  src: url("fonts/Lato/Lato-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Minion;
+  src: url("fonts/Minion/Minion-Regular.otf");
+  src: url("fonts/Minion/Minion-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: MinionBold;
+  src: url("fonts/Minion/Minion-Bold.otf");
+  src: url("fonts/Minion/Minion-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: MinionBoldItalic;
+  src: url("fonts/Minion/Minion-BoldIt.otf");
+  src: url("fonts/Minion/Minion-BoldIt.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: MinionItalic;
+  src: url("fonts/Minion/Minion-It.otf");
+  src: url("fonts/Minion/Minion-It.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: MinionMedium;
+  src: url("fonts/Minion/Minion-Medium.otf");
+  src: url("fonts/Minion/Minion-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: MinionMediumIt;
+  src: url("fonts/Minion/Minion-MediumIt.otf");
+  src: url("fonts/Minion/Minion-MediumIt.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: MinionSemibold;
+  src: url("fonts/Minion/MinionPro-Semibold.otf");
+  src: url("fonts/Minion/MinionPro-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: MinionSemiboldItalic;
+  src: url("fonts/Minion/Minion-SemiboldIt.otf");
+  src: url("fonts/Minion/Minion-SemiboldIt.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+a,
+p,
+li,
+span {
+  font-family: Minion, "Courier New", Courier, monospace;
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+h1.h1, .h1, h1.h2, h1.h3, h1.h4, h1.h5, h1.h6,
+h2.h1,
+h2.h2,
+.h2,
+h2.h3,
+h2.h4,
+h2.h5,
+h2.h6,
+h3.h1,
+h3.h2,
+h3.h3,
+.h3,
+h3.h4,
+h3.h5,
+h3.h6,
+h4.h1,
+h4.h2,
+h4.h3,
+h4.h4,
+.h4,
+h4.h5,
+h4.h6,
+h5.h1,
+h5.h2,
+h5.h3,
+h5.h4,
+h5.h5,
+.h5,
+h5.h6,
+h6.h1,
+h6.h2,
+h6.h3,
+h6.h4,
+h6.h5,
+h6.h6,
+.h6 {
+  font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+}
+h1.sectionTitle, .sectionTitle.h1,
+h1 .sectionTitle,
+.h1 .sectionTitle,
+h2.sectionTitle,
+.sectionTitle.h2,
+h2 .sectionTitle,
+.h2 .sectionTitle,
+h3.sectionTitle,
+.sectionTitle.h3,
+h3 .sectionTitle,
+.h3 .sectionTitle,
+h4.sectionTitle,
+.sectionTitle.h4,
+h4 .sectionTitle,
+.h4 .sectionTitle,
+h5.sectionTitle,
+.sectionTitle.h5,
+h5 .sectionTitle,
+.h5 .sectionTitle,
+h6.sectionTitle,
+.sectionTitle.h6,
+h6 .sectionTitle,
+.h6 .sectionTitle {
+  margin-bottom: 3rem;
+  text-align: center;
+  overflow-wrap: break-word;
+  position: relative;
+}
+h1.sectionTitle:before, .sectionTitle.h1:before, h1.sectionTitle:after, .sectionTitle.h1:after,
+h1 .sectionTitle:before,
+.h1 .sectionTitle:before,
+h1 .sectionTitle:after,
+.h1 .sectionTitle:after,
+h2.sectionTitle:before,
+.sectionTitle.h2:before,
+h2.sectionTitle:after,
+.sectionTitle.h2:after,
+h2 .sectionTitle:before,
+.h2 .sectionTitle:before,
+h2 .sectionTitle:after,
+.h2 .sectionTitle:after,
+h3.sectionTitle:before,
+.sectionTitle.h3:before,
+h3.sectionTitle:after,
+.sectionTitle.h3:after,
+h3 .sectionTitle:before,
+.h3 .sectionTitle:before,
+h3 .sectionTitle:after,
+.h3 .sectionTitle:after,
+h4.sectionTitle:before,
+.sectionTitle.h4:before,
+h4.sectionTitle:after,
+.sectionTitle.h4:after,
+h4 .sectionTitle:before,
+.h4 .sectionTitle:before,
+h4 .sectionTitle:after,
+.h4 .sectionTitle:after,
+h5.sectionTitle:before,
+.sectionTitle.h5:before,
+h5.sectionTitle:after,
+.sectionTitle.h5:after,
+h5 .sectionTitle:before,
+.h5 .sectionTitle:before,
+h5 .sectionTitle:after,
+.h5 .sectionTitle:after,
+h6.sectionTitle:before,
+.sectionTitle.h6:before,
+h6.sectionTitle:after,
+.sectionTitle.h6:after,
+h6 .sectionTitle:before,
+.h6 .sectionTitle:before,
+h6 .sectionTitle:after,
+.h6 .sectionTitle:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  background-color: #4b9b30;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+h1.sectionTitle:before, .sectionTitle.h1:before,
+h1 .sectionTitle:before,
+.h1 .sectionTitle:before,
+h2.sectionTitle:before,
+.sectionTitle.h2:before,
+h2 .sectionTitle:before,
+.h2 .sectionTitle:before,
+h3.sectionTitle:before,
+.sectionTitle.h3:before,
+h3 .sectionTitle:before,
+.h3 .sectionTitle:before,
+h4.sectionTitle:before,
+.sectionTitle.h4:before,
+h4 .sectionTitle:before,
+.h4 .sectionTitle:before,
+h5.sectionTitle:before,
+.sectionTitle.h5:before,
+h5 .sectionTitle:before,
+.h5 .sectionTitle:before,
+h6.sectionTitle:before,
+.sectionTitle.h6:before,
+h6 .sectionTitle:before,
+.h6 .sectionTitle:before {
+  bottom: -0.5rem;
+  width: 200px;
+}
+h1.sectionTitle:after, .sectionTitle.h1:after,
+h1 .sectionTitle:after,
+.h1 .sectionTitle:after,
+h2.sectionTitle:after,
+.sectionTitle.h2:after,
+h2 .sectionTitle:after,
+.h2 .sectionTitle:after,
+h3.sectionTitle:after,
+.sectionTitle.h3:after,
+h3 .sectionTitle:after,
+.h3 .sectionTitle:after,
+h4.sectionTitle:after,
+.sectionTitle.h4:after,
+h4 .sectionTitle:after,
+.h4 .sectionTitle:after,
+h5.sectionTitle:after,
+.sectionTitle.h5:after,
+h5 .sectionTitle:after,
+.h5 .sectionTitle:after,
+h6.sectionTitle:after,
+.sectionTitle.h6:after,
+h6 .sectionTitle:after,
+.h6 .sectionTitle:after {
+  bottom: -1rem;
+  width: 100px;
+}
+
+.btn-primary {
+  color: white;
+}
+.btn-primary:hover {
+  color: white;
+}
+
 #main-nav .custom-logo-link img {
   width: 40px !important;
 }
@@ -15611,6 +15931,7 @@ figure.woocommerce-product-gallery__wrapper {
   position: relative;
   font-weight: 500;
   transition: color 0.4s ease-in-out;
+  font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
 }
 .navbar-nav .nav-item .nav-link:after {
   content: "";
@@ -15624,10 +15945,10 @@ figure.woocommerce-product-gallery__wrapper {
   transform: scale(0);
   transform-origin: center;
 }
-.navbar-nav .nav-item .nav-link:hover {
-  color: white;
+.navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link:focus {
+  color: black;
 }
-.navbar-nav .nav-item .nav-link:hover:after {
+.navbar-nav .nav-item .nav-link:hover:after, .navbar-nav .nav-item .nav-link:focus:after {
   transform: scale(1);
 }
 @media (max-width: 767.98px) {
@@ -15641,52 +15962,126 @@ figure.woocommerce-product-gallery__wrapper {
   width: 100%;
 }
 
-.k_lastArticles p {
+.lastArticles p {
   margin-bottom: 2rem;
 }
-.k_lastArticles__content {
+.lastArticles__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-.k_lastArticles__list {
-  align-self: center;
+.lastArticles__listItem {
+  padding: 0;
 }
-.k_lastArticles__coverLink {
+.lastArticles__listItemLink {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.lastArticles__listItemLink:hover {
+  background-color: #4b9b30;
+  color: white;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.lastArticles__coverLink {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0px 0px 0px #00000088;
+}
+.lastArticles__coverLink:hover .lastArticles__image {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 4px #00000088;
+}
+.lastArticles__image {
+  transform: scale(1);
+  box-shadow: 4px 4px 8px #00000088;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+@media (max-width: 767.98px) {
+  .lastArticles__cover {
+    margin-bottom: 1rem;
+  }
+  .lastArticles__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.volume__header {
+  margin-bottom: 2rem;
+}
+.volume__title {
+  margin-bottom: 2rem;
+}
+.volume__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.volume__contentImage {
   display: block;
   margin: 0 auto;
   text-align: center;
   max-width: 300px;
 }
-@media (max-width: 767.98px) {
-  .k_lastArticles__cover {
-    margin-bottom: 1rem;
+@media (min-width: 768px) {
+  .volume__content {
+    grid-template-columns: minmax(auto, 300px) 1fr;
   }
-  .k_lastArticles__content {
-    grid-template-columns: 1fr;
+}
+.volume__listItem {
+  padding: 0;
+}
+.volume__listItemLink {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.volume__listItemLink:hover {
+  background-color: #4b9b30;
+  color: white;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.volume__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+@media (min-width: 576px) {
+  .volume__footer {
+    flex-direction: row;
   }
 }
 
-.volume_post_type .entry-title {
-  text-align: center;
-}
-.volume_post_type .wp-post-image {
-  display: block;
-  margin: 1rem auto;
+#single-wrapper {
+  min-height: calc(100vh - 138px);
 }
 
 .articles__grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 .articles__gridItem .card-img-top {
   width: 100%;
-  height: 400px;
+  height: auto;
 }
 .articles__gridItem .card-body {
-  display: grid;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .articles__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .articles__grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .friends__grid {
@@ -15712,8 +16107,8 @@ figure.woocommerce-product-gallery__wrapper {
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
-  height: 200px;
-  justify-content: space-between;
+  height: 230px;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
   box-shadow: 10px 10px 10px #00000055;
@@ -15721,7 +16116,7 @@ figure.woocommerce-product-gallery__wrapper {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .friends__gridItemLink:hover, .friends__gridItemLink:focus {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 5px 5px 10px #00000055;
 }
 .friends__gridItemImage {
@@ -15729,6 +16124,31 @@ figure.woocommerce-product-gallery__wrapper {
   width: auto;
   height: 100px;
 }
+.friends__gridItemContentText {
+  margin-bottom: 1rem;
+}
+
+.site__header {
+  box-shadow: 5px 5px 10px #00000088;
+}
+
+.post .wp-post-image {
+  margin: 0 auto 3rem;
+  display: block;
+}
+.post .entry-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  align-items: center;
+  margin: 0 auto;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-size: 1.125rem;
+  text-align: justify;
+  word-break: break-word;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
