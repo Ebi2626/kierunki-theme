@@ -131,7 +131,7 @@ a,
 p,
 li,
 span {
-  font-family: Minion, 'Courier New', Courier, monospace;
+  font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 // Headers
@@ -141,8 +141,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
+  font-family: Minion, 'Courier New', Courier, monospace;
 
   &.h1,
   &.h2,

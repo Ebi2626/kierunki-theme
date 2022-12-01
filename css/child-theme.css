@@ -15721,7 +15721,7 @@ a,
 p,
 li,
 span {
-  font-family: Minion, "Courier New", Courier, monospace;
+  font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1, .h1,
@@ -15735,8 +15735,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
+  font-family: Minion, "Courier New", Courier, monospace;
 }
 h1.h1, .h1, h1.h2, h1.h3, h1.h4, h1.h5, h1.h6,
 h2.h1,
@@ -15931,7 +15931,6 @@ h6 .sectionTitle:after,
   position: relative;
   font-weight: 500;
   transition: color 0.4s ease-in-out;
-  font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
 }
 .navbar-nav .nav-item .nav-link:after {
   content: "";
