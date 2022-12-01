@@ -48,7 +48,7 @@ $container = get_theme_mod('understrap_container_type');
           <h2 class="articles__title text-center sectionTitle">Najnowsze numery</h2>
           <div class="articles__wrapper mx-4">
             <?php if ($recent_volumes->have_posts()): ?>
-            <ul class="articles__grid">
+            <ul class="articles__grid ps-0">
               <?php
               while ($recent_volumes->have_posts()):
                 $recent_volumes->the_post();
