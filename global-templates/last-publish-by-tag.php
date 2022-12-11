@@ -29,6 +29,7 @@
           'post_type' => 'post',
           'post_status' => 'publish',
           'tag_id' => $lastVolumeTagId,
+          'posts_per_page' => -1,
         );
         $recent_volume_articles = new WP_Query($query_articles_by_tag);
         ?>

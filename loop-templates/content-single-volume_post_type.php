@@ -46,6 +46,7 @@ defined('ABSPATH') || exit;
         'post_type' => 'post',
         'post_status' => 'publish',
         'tag_id' => $tagId,
+        'posts_per_page' => -1,
       );
       $volume_articles = new WP_Query($query_articles_by_tag);
         ?>
