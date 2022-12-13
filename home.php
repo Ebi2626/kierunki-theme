@@ -50,6 +50,7 @@ $container = get_theme_mod('understrap_container_type');
             <?php if ($recent_volumes->have_posts()): ?>
             <ul class="articles__grid ps-0">
               <?php
+              remove_filter('get_the_excerpt', 'wpautop');
               while ($recent_volumes->have_posts()):
                 $recent_volumes->the_post();
                 $thumbnail_id = get_post_thumbnail_id(get_the_ID());
@@ -60,9 +61,9 @@ $container = get_theme_mod('understrap_container_type');
                 <div class="card-body">
                   <p class="card-text">
                     <?php
-                $trimmedExcerpt = wp_strip_all_tags(get_the_excerpt());
-                if ('' != $trimmedExcerpt) {
-                  $trimmedExcerpt = substr($trimmedExcerpt, 0, -37); // Trimming czytaj dalej button
+                $trimmedExcerpt = trim(wp_strip_all_tags(get_the_excerpt()));
+                if ($trimmedExcerpt != '') {
+                  $trimmedExcerpt = trim(substr($trimmedExcerpt, 0, -37)); // Trimming czytaj dalej button
                 }
                 echo $trimmedExcerpt . "..."; // Outputs the processed value to the page
                     ?>
@@ -72,6 +73,7 @@ $container = get_theme_mod('understrap_container_type');
                 </div>
               </li>
               <?php endwhile; ?>
+              <?php add_filter('get_the_excerpt', 'wpautop'); ?>
             </ul>
             <?php endif; ?>
           </div>
