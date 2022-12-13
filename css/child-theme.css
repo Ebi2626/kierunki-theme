@@ -16197,6 +16197,10 @@ h6 .sectionTitle:after,
   text-align: right;
 }
 
+.page .entry-title {
+  display: none !important;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
