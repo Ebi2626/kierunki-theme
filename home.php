@@ -19,12 +19,11 @@ get_header();
 $container = get_theme_mod('understrap_container_type');
 ?>
 
-<?php get_template_part('global-templates/home-hero'); ?>
 
-<?php get_template_part('global-templates/last-publish-by-tag'); ?>
+<div class="wrapper pt-0" id="index-wrapper">
+  <?php get_template_part('global-templates/home-hero'); ?>
 
-
-<div class="wrapper" id="index-wrapper">
+  <?php get_template_part('global-templates/last-publish-by-tag'); ?>
 
   <div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
 

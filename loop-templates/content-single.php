@@ -10,7 +10,7 @@ defined('ABSPATH') || exit;
 ?>
 
 <article <?php post_class(); ?> id="post-
-    <?php the_ID(); ?>">
+  <?php the_ID(); ?>">
 
   <header class="entry-header">
     <h1 class="entry-title sectionTitle">
@@ -26,15 +26,8 @@ defined('ABSPATH') || exit;
 
     <?php
     the_content();
-    understrap_link_pages();
     ?>
 
   </div><!-- .entry-content -->
-
-  <footer class="entry-footer">
-
-    <?php understrap_entry_footer(); ?>
-
-  </footer><!-- .entry-footer -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -16131,6 +16131,9 @@ h6 .sectionTitle:after,
   box-shadow: 5px 5px 10px #00000088;
 }
 
+.post.type-post {
+  margin-bottom: 2rem;
+}
 .post .wp-post-image {
   margin: 0 auto 3rem;
   display: block;
@@ -16259,6 +16262,52 @@ h6 .sectionTitle:after,
   justify-content: center;
   text-align: center;
   color: white;
+}
+
+.comment-list.list-group.list-group-numbered {
+  margin-bottom: 2rem;
+}
+.comment-list.list-group.list-group-numbered .comment, .comment-list.list-group.list-group-numbered .children .comment {
+  position: relative;
+  padding: 1rem 1.5rem;
+  color: #212529;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  display: list-item;
+}
+.comment-list.list-group.list-group-numbered .comment:before, .comment-list.list-group.list-group-numbered .children .comment:before {
+  position: absolute;
+}
+.comment-list.list-group.list-group-numbered .comment-body, .comment-list.list-group.list-group-numbered .children .comment-body {
+  margin-top: 2.5rem;
+}
+.comment-list.list-group.list-group-numbered .comment-body .reply, .comment-list.list-group.list-group-numbered .children .comment-body .reply {
+  margin-bottom: 1rem;
+}
+.comment-list.list-group.list-group-numbered .comment-metadata, .comment-list.list-group.list-group-numbered .children .comment-metadata {
+  margin-bottom: 1rem;
+}
+.comment-list.list-group.list-group-numbered .children {
+  margin-top: 2rem;
+  list-style-type: none;
+  counter-reset: section;
+  padding-left: 0;
+}
+.comment-list.list-group.list-group-numbered .children > li:before {
+  content: counters(section, ".") ". ";
+  counter-increment: section;
+}
+@media (min-width: 768px) {
+  .comment-list.list-group.list-group-numbered .children {
+    padding-left: 2rem;
+  }
+}
+
+#page {
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 .has-blue-color,

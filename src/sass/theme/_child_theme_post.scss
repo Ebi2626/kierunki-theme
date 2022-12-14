@@ -1,4 +1,8 @@
 .post {
+  &.type-post {
+    margin-bottom: 2rem;
+  }
+
   .wp-post-image {
     margin: 0 auto 3rem;
     display: block;
