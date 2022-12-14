@@ -16161,12 +16161,12 @@ h6 .sectionTitle:after,
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: space-around;
+  justify-content: center;
   position: relative;
   background: url("../images/mobile-footer.jpg") no-repeat top left;
   background-size: cover;
   min-height: 850px;
-  padding: 2.5rem;
+  padding: 2.5rem 1rem;
   margin-top: 4rem;
 }
 .footer__wrapper:after {
@@ -16186,11 +16186,12 @@ h6 .sectionTitle:after,
     min-height: 350px;
     margin-top: 0;
     background-size: cover;
+    padding: 2.5rem;
   }
 }
 @media (min-width: 992px) {
   .footer__wrapper {
-    min-height: 350px;
+    min-height: 420px;
     background-size: cover;
   }
 }
@@ -16214,12 +16215,15 @@ h6 .sectionTitle:after,
   }
 }
 .footer__headers {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .footer__content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
+}
+.footer__contentItem {
+  padding: 0 0.5rem;
 }
 @media (min-width: 768px) {
   .footer__contentItem:not(:nth-child(3)) {

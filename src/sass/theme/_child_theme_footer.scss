@@ -11,12 +11,12 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        justify-content: space-around;
+        justify-content: center;
         position: relative;
         background: url("../images/mobile-footer.jpg") no-repeat top left;
         background-size: cover;
         min-height: 850px;
-        padding: 2.5rem;
+        padding: 2.5rem 1rem;
         margin-top: 4rem;
 
         &:after {
@@ -36,10 +36,11 @@
             min-height: 350px;
             margin-top: 0;
             background-size: cover;
+            padding: 2.5rem;
         }
 
         @include media-breakpoint-up(lg) {
-            min-height: 350px;
+            min-height: 420px;
             background-size: cover;
         }
     }
@@ -67,15 +68,17 @@
     }
 
     &__headers {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     &__content {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 2rem;
 
         &Item {
+            padding: 0 .5rem;
+
             &:not(:nth-child(3)) {
                 @include media-breakpoint-up(md) {
                     border-right: solid 1px white;
