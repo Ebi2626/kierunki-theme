@@ -16247,6 +16247,42 @@ h6 .sectionTitle:after,
   fill: black;
   color: black;
 }
+.footer__contentItemTextLink--buyCoffe .st0 {
+  fill: #00A962;
+}
+.footer__contentItemTextLink--buyCoffe .st1 {
+  enable-background: new;
+}
+.footer__contentItemTextLink--buyCoffe .st2 {
+  fill: #FFFFFF;
+}
+.footer__contentItemTextLink--buyCoffe .st3 {
+  fill: #1E3A33;
+}
+.footer__contentItemTextLink--buyCoffe .st4 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #FFFFFF;
+}
+.footer__contentItemTextLink--buyCoffe .st0,
+.footer__contentItemTextLink--buyCoffe .st2,
+.footer__contentItemTextLink--buyCoffe .st4 {
+  transition: fill 0.3s ease-in-out;
+}
+.footer__contentItemTextLink--buyCoffe:hover .st0 {
+  fill: #FFFFFF;
+}
+.footer__contentItemTextLink--buyCoffe:hover .st2 {
+  fill: #00A962;
+}
+.footer__contentItemTextLink--buyCoffe:hover .st4 {
+  fill: #00A962;
+}
+.footer__contentItemTextLink--buyCoffe:hover .st0,
+.footer__contentItemTextLink--buyCoffe:hover .st2,
+.footer__contentItemTextLink--buyCoffe:hover .st4 {
+  transition: fill 0.3s ease-in-out;
+}
 .footer__contentItemTextIcon {
   margin-right: 1rem;
 }

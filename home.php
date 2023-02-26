@@ -23,6 +23,8 @@ $container = get_theme_mod('understrap_container_type');
 <div class="wrapper pt-0" id="index-wrapper">
   <?php get_template_part('global-templates/home-hero'); ?>
 
+  <?php get_template_part('global-templates/cta'); ?>
+
   <?php get_template_part('global-templates/last-publish-by-tag'); ?>
 
   <div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
@@ -60,11 +62,15 @@ $container = get_theme_mod('understrap_container_type');
                 <div class="card-body">
                   <p class="card-text">
                     <?php
+                // '[...]Czytaj dalej… from Kierunki nr 1/2022'
+                $pattern = '/(\. )?\[...\]Czytaj dalej…(.)*/i';
+                $replacement = '';
                 $trimmedExcerpt = trim(wp_strip_all_tags(get_the_excerpt()));
                 if ($trimmedExcerpt != '') {
-                  $trimmedExcerpt = trim(substr($trimmedExcerpt, 0, -37)); // Trimming czytaj dalej button
+                  $trimmedExcerpt = preg_replace($pattern, $replacement, $trimmedExcerpt); // Trimming czytaj dalej button 
+                  echo '<script>console.log(`after trimming from everything: ' . $trimmedExcerpt . '`);</script>';
+                  echo $trimmedExcerpt; // Outputs the processed value to the page
                 }
-                echo $trimmedExcerpt . "..."; // Outputs the processed value to the page
                     ?>
                   </p>
                   <a href="<?php the_permalink(); ?>" class="btn btn-primary text-white">Przejdź do

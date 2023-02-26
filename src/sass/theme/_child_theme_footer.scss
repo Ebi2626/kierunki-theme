@@ -103,6 +103,56 @@
                     }
                 }
 
+                &Link--buyCoffe {
+                    .st0 {
+                        fill: #00A962;
+                    }
+
+                    .st1 {
+                        enable-background: new;
+                    }
+
+                    .st2 {
+                        fill: #FFFFFF;
+                    }
+
+                    .st3 {
+                        fill: #1E3A33;
+                    }
+
+                    .st4 {
+                        fill-rule: evenodd;
+                        clip-rule: evenodd;
+                        fill: #FFFFFF;
+                    }
+
+                    .st0,
+                    .st2,
+                    .st4 {
+                        transition: fill .3s ease-in-out;
+                    }
+
+                    &:hover {
+                        .st0 {
+                            fill: #FFFFFF;
+                        }
+
+                        .st2 {
+                            fill: #00A962;
+                        }
+
+                        .st4 {
+                            fill: #00A962;
+                        }
+
+                        .st0,
+                        .st2,
+                        .st4 {
+                            transition: fill .3s ease-in-out;
+                        }
+                    }
+                }
+
                 &Icon {
                     margin-right: 1rem;
                 }
