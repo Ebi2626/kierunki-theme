@@ -16346,6 +16346,10 @@ h6 .sectionTitle:after,
   min-height: 100vh;
 }
 
+.cta {
+  flex-direction: column;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
